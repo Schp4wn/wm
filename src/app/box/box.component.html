@@ -1,21 +1,31 @@
-<!-- <h2>{{ box.name }} Next match</h2> -->
+<section class="main-page__games-section">
+    <div class="main-page__games-wrapper">
+      <h3 class="main-page__games-wrapper-title">
+          {{team.name}} vs. {{team.name | uppercase}}
+      </h3>
+     
+     <div class="main-page__games-wrapper-image">
+        <img src="{{team.image}}" alt="team"> 
+        <img src="{{team.image}}" alt="team2">
+    </div>
+    <p class="main-page__games-wrapper-text">
+        Lorem Ipsum
+        </p>
+  </div>     
+    
+    <div class="main-page__games-wrapper">
+      <h3 class="main-page__games-wrapper-title">
+          {{team.name | uppercase}} vs. {{team.name | uppercase}}
+      </h3>
+      
+      <div class="main-page__games-wrapper-image">
+          <img src="{{team.image}}" alt="team"> 
+          <img src="{{team.image}}" alt="team2">
+      </div> 
+      <p class="main-page__games-wrapper-text">
+        Lorem Ipsum
+        </p>
+    </div>
+  </section>
 
-<div>
-  <span>game id: </span>
-    {{box.id}}
-</div>
 
-<div>
-  <span>Next Match: </span>
-   {{box.name}}
-</div>
-
-<div>
-    <span>Logos: </span>
-     {{box.logo1}} vs. {{box.logo2}}
-  </div>
-
-<div>
-  <span>Date: </span>
-   {{ box.date }}
-</div>

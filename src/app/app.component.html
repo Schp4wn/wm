@@ -1,19 +1,23 @@
-<div style="text-align:center">
-    <img width="300" alt="WorldCup" src="https://vignette.wikia.nocookie.net/logopedia/images/d/d1/2018_FIFA_World_Cup_logo.png/revision/latest?cb=20141103234136">
+    <section class="main-page__header">
+      <div class="main-page__header-cup-image-wrapper"
+           style="text-align:center">
+        <img class="main-page__header-cup-image"
+             width="300"
+             alt="WorldCup"
+             src="https://vignette.wikia.nocookie.net/logopedia/images/d/d1/2018_FIFA_World_Cup_logo.png/revision/latest?cb=20141103234136">
+      </div>
+  
+      <h1 class="main-page__header-title">{{ title }}!</h1>
+      <h2 class="main-page__header-subtitle">{{ subtitle }}</h2>
+      <p class="main-page__header-text">{{ paragraph }}</p>
+    </section>
+  
+    <br />
+    <app-box></app-box>    
+    <br />
+    <app-ticker></app-ticker>
+   
 
-  <h1>  {{ title }}!  </h1>
-  <h2>  {{ subtitle }}  </h2>
-  <p>   {{ paragraph }} </p>
-</div>
-
-<br />
-    <div id="wrapper" >Block 1
-      <app-box></app-box>
-    </div>
-     
-    <div id="wrapper" >Block 2
-      <app-box></app-box>
-    </div>
 
 <!-- <app-ticker></app-ticker> -->
 

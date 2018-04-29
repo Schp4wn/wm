@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Games } from '../games';
+import { Team } from '../team';
+import { TEAMS } from '../mock-team';
  
 @Component({
   selector: 'app-box',
@@ -7,12 +8,10 @@ import { Games } from '../games';
   styleUrls: ['./box.component.css']
 })
 export class BoxComponent implements OnInit {
-  box: Games = {
-    id: 1,
-    logo1: 'test1',
-    logo2: 'test2',
-    name: 'England vs France',
-    date: '2016-01-05'
+  team: Team = {
+    "id": 1,
+    "name": 'England',
+    "image": 'https://soccerlogo.net/wp-content/uploads/2016/05/Logo-England.png'
   };
  
   constructor() { }
